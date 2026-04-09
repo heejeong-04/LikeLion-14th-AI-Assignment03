@@ -9,8 +9,6 @@ print(f"최저점: {min(scores)}점")
 print(f"평균: {sum(scores)/len(scores):.1f}점")
 
 # 점수별 등급 출력
-grade_counts = {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0}
-
 for score in scores:
     if score >= 90:
         grade = "A"
@@ -26,5 +24,5 @@ for score in scores:
     print(f"점수: {score} -> {grade}학점")
 
 # 정렬 후 상위 3개
-sorted_scores = sorted(scores, reverse=True)
-print(f"상위 3개: {sorted_scores[:3]}")
+scores.sort(reverse=True)
+print(f"상위 3개: {scores[:3]}")

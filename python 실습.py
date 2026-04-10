@@ -19,8 +19,7 @@ for score in scores:
     elif score >= 60:
         grade = "D"
     else:
-        grade = "F"
-    grade_counts[grade] += 1
+        grade = "F
     print(f"점수: {score} -> {grade}학점")
 
 # 정렬 후 상위 3개
